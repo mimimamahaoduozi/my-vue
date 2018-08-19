@@ -1,13 +1,12 @@
 <template>
-<div class="header">
-  <solt name="left"></solt>
-  <div></div>
-</div>
+    <div>
+      {{$route.params.newId}}
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'header'
+  name: 'about3'
 }
 </script>
 
