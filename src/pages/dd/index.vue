@@ -1,12 +1,28 @@
 <template>
-<div>
-  订单
-</div>
+  <div>
+    <Header title="订单管理">
+      <div slot="left">
+        <i class="iconfont left" @click="goback">&#xe61c;</i>
+      </div>
+    </Header>
+    <div>
+      订单
+    </div>
+  </div>
 </template>
 
 <script>
+import Header from '../../components/header/'
 export default {
-  name: 'dd'
+  name: 'index',
+  components: {
+    Header
+  },
+  methods: {
+    goback () {
+      this.$router.back()
+    }
+  }
 }
 </script>
 

@@ -11,6 +11,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'index',
   methods: {
@@ -23,6 +24,8 @@ export default {
 
 <style scoped lang="less">
 .footer{
+  padding: .5rem 0;
+  font-size: .45rem;
   background-color: #fff;
   position: fixed;
   z-index: 100;

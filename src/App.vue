@@ -15,19 +15,30 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+  @import "./style/reset";
   @font-face {
     font-family: 'iconfont';  /* project id 799023 */
-    src: url('//at.alicdn.com/t/font_799023_ptwhommnlq.eot');
-    src: url('//at.alicdn.com/t/font_799023_ptwhommnlq.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_799023_ptwhommnlq.woff') format('woff'),
-    url('//at.alicdn.com/t/font_799023_ptwhommnlq.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_799023_ptwhommnlq.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_799023_2lnbung9cez.eot');
+    src: url('//at.alicdn.com/t/font_799023_2lnbung9cez.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_799023_2lnbung9cez.woff') format('woff'),
+    url('//at.alicdn.com/t/font_799023_2lnbung9cez.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_799023_2lnbung9cez.svg#iconfont') format('svg');
   }
   .iconfont{
     font-family:"iconfont" !important;
-    font-size:24px;font-style:normal;
+    font-size:20px;font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;}
+  .clearfix:before{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
 </style>
