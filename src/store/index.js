@@ -6,7 +6,7 @@ import getters from './geters'
 Vue.use(Vuex)
 
 const state = {
-  foodlists:{}
+  foodlists: {}
 }
 
 export default new Vuex.Store({

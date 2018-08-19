@@ -1,3 +1,5 @@
+
+import fetch from './fetch'
 /**
  * 获取msite页面食品分类列表
  */

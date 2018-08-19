@@ -14,10 +14,14 @@
 
 <script>
 import Header from '../../components/header/'
+import {msiteFoodTypes} from '../../api'
 export default {
   name: 'home',
   components:{
     Header
+  },
+  mounted(){
+    msiteFoodTypes()
   }
 }
 </script>
