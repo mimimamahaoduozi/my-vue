@@ -3,12 +3,8 @@ import Vuex from 'vuex'
 import mutations from './mutations'
 import actions from './action'
 import getters from './geters'
+import state from './state'
 Vue.use(Vuex)
-
-const state = {
-  foodlists: {}
-}
-
 export default new Vuex.Store({
   state,
   getters,

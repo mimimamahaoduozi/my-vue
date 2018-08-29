@@ -11,21 +11,20 @@ app.all('*', function (req, res, next) {
   else next()
 })
 
-
-//活动接口
-let news = require('./mock/news');
+// 活动接口
+let news = require('./mock/news')
 app.get('/header', function (req, res) {
   res.json(news)
 })
 
-//游戏排行榜接口
-let hotlist = require('./mock/hotlist');
+// 游戏排行榜接口
+let hotlist = require('./mock/hotlist')
 app.get('/hotlist', function (req, res) {
   res.json(hotlist)
 })
 
-//热门游戏接口
-let hotgame = require('./mock/hotgame');
+// 热门游戏接口
+let hotgame = require('./mock/hotgame')
 app.get('/hotgame', function (req, res) {
   res.json(hotgame)
 })

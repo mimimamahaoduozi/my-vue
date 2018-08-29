@@ -41,4 +41,7 @@ export default {
     display: block;
     clear: both;
   }
+  .contents{
+    margin-top: 1.95rem;
+  }
 </style>

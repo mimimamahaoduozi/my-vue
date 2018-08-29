@@ -8,24 +8,45 @@
       <router-link to="/user">登录/注册</router-link>
     </div>
   </Header>
-  主页
+  <div class="contents">
+    <ul>
+      <footItem
+        v-for="item in bannerlists[0].entries"
+        :item="item"
+      ></footItem>
+    </ul>
+  </div>
 </div>
 </template>
 
 <script>
 import Header from '../../components/header/'
-import {msiteFoodTypes} from '../../api'
+import {mapState} from 'vuex'
+import footItem from './components/footItem'
 export default {
+
   name: 'home',
-  components:{
-    Header
+  data () {
+    return {
+      show: true,
+      lists: {}
+    }
   },
-  mounted(){
-    msiteFoodTypes()
+  computed: {
+    ...mapState([
+      'bannerlists'
+    ])
+  },
+  components: {
+    Header,
+    footItem
+  },
+  mounted () {
+    this.$store.dispatch('getbanner')
   }
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
 
 </style>

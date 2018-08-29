@@ -25,7 +25,6 @@ export default {
     height: 1.95rem;
     line-height: 1.95rem;
     color: #fff;
-    position: relative;
    .middle{
      left: 25%;
      width:50%;

@@ -12,15 +12,15 @@
 </template>
 
 <script>
-  import Header from '../../components/header/'
+import Header from '../../components/header/'
 export default {
   name: 'index',
-  components:{
+  components: {
     Header
   },
-  methods:{
-    goback(){
-      this.$router.back();
+  methods: {
+    goback () {
+      this.$router.back()
     }
   }
 }
