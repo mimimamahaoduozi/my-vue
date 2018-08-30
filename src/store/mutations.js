@@ -6,5 +6,8 @@ export default {
   },
   [type.GET_BANNER] (state, bannerlists) {
     state.bannerlists = bannerlists
+  },
+  [type.GET_SHOP_SORT] (state, shopSort) {
+    state.shopSort = shopSort
   }
 }

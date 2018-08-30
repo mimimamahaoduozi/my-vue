@@ -1,4 +1,5 @@
 export default {
   foodlists: {},
-  bannerlists: []
+  bannerlists: [],
+  shopSort:{}
 }

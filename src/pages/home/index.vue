@@ -15,6 +15,23 @@
         :item="item"
       ></footItem>
     </ul>
+    <ul class="nav">
+      <li>
+        <template>
+          <el-select v-model="value" placeholder="请选择" class="aaa">
+            <el-option
+              v-for="item in shopSort.inside_sort_filter"
+              :key="item.value"
+              :label="item.name"
+              :value="item.name">
+            </el-option>
+          </el-select>
+        </template>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </div>
 </div>
 </template>
@@ -29,12 +46,13 @@ export default {
   data () {
     return {
       show: true,
-      lists: {}
+      value:''
     }
   },
   computed: {
     ...mapState([
-      'bannerlists'
+      'bannerlists',
+      'shopSort'
     ])
   },
   components: {
@@ -43,10 +61,15 @@ export default {
   },
   mounted () {
     this.$store.dispatch('getbanner')
+    this.$store.dispatch('getSort')
   }
 }
 </script>
 
 <style scoped lang="less">
-
+.nav{
+  li{
+    width: 25%;
+  }
+}
 </style>
